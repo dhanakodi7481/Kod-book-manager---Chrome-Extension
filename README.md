@@ -33,7 +33,7 @@
 
 <p align="center">
 
-<img src="icons/logokbm.png" width="500">
+<img src="icons/logokbm.png" width="300">
 
 </p>
 
