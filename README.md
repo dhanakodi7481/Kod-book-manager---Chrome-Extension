@@ -33,7 +33,7 @@
 
 <p align="center">
 
-<img src="preview.png" width="900">
+<img src="icons/icon128.png" width="900">
 
 </p>
 
