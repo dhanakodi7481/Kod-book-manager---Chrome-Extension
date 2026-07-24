@@ -1,0 +1,360 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 400px;
+    height: 600px;
+    background: #f4f6fb;
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Container */
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #fff;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #fff;
+    color: #2563eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.brand h2 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.brand p {
+    font-size: 12px;
+    opacity: .85;
+    margin-top: 2px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icon-btn:hover {
+    background: #fff;
+    color: #2563eb;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    flex: 1;
+    border: none;
+    background: #fff;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+    color: #666;
+}
+
+.tab i {
+    margin-right: 6px;
+}
+
+.tab.active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+.tab:hover {
+    background: #f3f6ff;
+}
+
+/* Search */
+.search-box {
+    margin: 15px;
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    color: #888;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    transition: .3s;
+}
+
+.search-box input:focus {
+    border-color: #2563eb;
+}
+
+/* Save Button */
+.save-area {
+    padding: 0 15px;
+}
+
+#saveBtn {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#saveBtn i {
+    margin-right: 8px;
+}
+
+#saveBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, .35);
+}
+
+/* Stats */
+.stats {
+    padding: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.stats strong {
+    color: #2563eb;
+}
+
+/* Bookmark List */
+#bookmarkList {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 15px 15px;
+}
+
+/* Bookmark Card */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e5e5;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.fav-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.fav-btn.active {
+    color: #f59e0b;
+}
+
+.url {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #666;
+    word-break: break-all;
+}
+
+/* Buttons */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.actions button {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.actions button:first-child {
+    background: #2563eb;
+}
+
+.actions button:last-child {
+    background: #ef4444;
+}
+
+.actions button:hover {
+    opacity: .9;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    background: #fafafa;
+}
+
+/* Scrollbar */
+#bookmarkList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#bookmarkList::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+#bookmarkList::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+/* ================= DARK MODE ================= */
+body.dark-mode {
+    background: #0f172a;
+}
+
+body.dark-mode .container {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+body.dark-mode .tabs {
+    background: #1e293b;
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .tab {
+    background: #1e293b;
+    color: #94a3b8;
+}
+
+body.dark-mode .tab.active {
+    color: #60a5fa;
+    border-bottom-color: #60a5fa;
+}
+
+body.dark-mode .tab:hover {
+    background: #334155;
+}
+
+body.dark-mode .search-box input {
+    background: #0f172a;
+    border-color: #334155;
+    color: #fff;
+}
+
+body.dark-mode .search-box input:focus {
+    border-color: #60a5fa;
+}
+
+body.dark-mode .search-box i {
+    color: #94a3b8;
+}
+
+body.dark-mode .stats {
+    color: #94a3b8;
+}
+
+body.dark-mode .stats strong {
+    color: #60a5fa;
+}
+
+body.dark-mode .card {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+body.dark-mode .title {
+    color: #f8fafc;
+}
+
+body.dark-mode .url {
+    color: #94a3b8;
+}
+
+body.dark-mode .footer {
+    background: #0f172a;
+    border-top-color: #334155;
+    color: #94a3b8;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Bookmark Manager</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="brand">
+
+            <div class="logo">
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+
+            <div>
+                <h2>Kod Bookmark Manager</h2>
+                <p>Organize your favorite websites</p>
+            </div>
+
+        </div>
+
+        <div class="header-icons">
+
+            <button class="icon-btn" id="darkModeBtn" title="Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Tabs -->
+
+    <div class="tabs">
+
+        <button class="tab active" data-tab="all">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmarks
+        </button>
+
+        <button class="tab" data-tab="favorites">
+            <i class="fa-solid fa-star"></i>
+            Favorites
+        </button>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search bookmarks...">
+
+    </div>
+
+    <!-- Save Button -->
+
+    <div class="save-area">
+
+        <button id="saveBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Save Current Website
+
+        </button>
+
+    </div>
+
+    <!-- Stats -->
+
+    <div class="stats">
+
+        <span>
+            <i class="fa-solid fa-bookmark"></i>
+
+            <strong id="bookmarkCount">0</strong> Bookmarks
+        </span>
+
+    </div>
+
+    <!-- Bookmark List -->
+
+    <div id="bookmarkList">
+
+        <!-- JavaScript will create bookmark cards here -->
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <small>
+
+            © 2026 Kod Bookmark Manager
+
+        </small>
+
+    </footer>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+
+</html>
